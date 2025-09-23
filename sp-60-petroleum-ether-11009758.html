@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SP 60 Petroleum Ehter-Thinner</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    .overlay {
+      position:absolute; inset:0;
+      background:linear-gradient(180deg,rgba(2,6,23,0.25) 0%,rgba(2,6,23,0.6) 65%);
+      display:flex; align-items:center;
+    }
+    .hero-caption { max-width:680px; padding:2rem; }
+    .hero-title { font-size:clamp(1.6rem,3.5vw,2.6rem); line-height:1.2; font-weight:800; color:#fff; }
+    .hero-sub { margin-top:.6rem; color:rgba(255,255,255,0.9); }
+
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f5f8;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 150px;
+  width: 80%;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  
+}
+
+.product-image img {
+  width: 450px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-details {
+  flex: 1;
+  
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.price {
+  color: #007bff;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: bold;
+}
+
+.quote-btn {
+  background: white;
+  border: 1px solid #d00;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.quote-btn:hover
+{
+    background: #d00;
+    color: #fff;
+}
+
+.details h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.details table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ccc;
+  vertical-align: top;
+}
+.btn
+{
+    margin-top: 10px;
+}
+.details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.social-share {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+.social-share a {
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Colors for each icon */
+.social-share a.fb { background: #1877f2; }     
+.social-share a.ig { background: #e4405f; }     
+.social-share a.wa { background: #25d366; }    
+.social-share a.x  { background: #000000; } 
+
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* ek ke neeche ek */
+  gap: 12px; /* dono ke beech space */
+  align-items: center; /* center align horizontally */
+}
+
+.callback-btn, 
+.inquiry-btn {
+  display: block;       /* line ke pura width le */
+  width: 80%;           /* badi width */
+  max-width: 400px;     /* optional: limit width */
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;   /* text center me */
+  margin-right: 0;      /* remove right margin */
+}
+.callback-btn {
+  background: white;
+  color: #d00;
+  border: 2px solid #d00;
+}
+.callback-btn:hover
+{
+    background-color: #d00;
+    color: #fff;
+}
+
+.inquiry-btn {
+  background: #d00;
+  color: white;
+   border: 2px solid #d00;
+
+}
+.inquiry-btn:hover
+{
+    background-color: #fff;
+    color: #d00;
+}
+.container2 {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.row > div {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+.faq
+{
+    line-height: 1;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .product-image, .product-details {
+    width: 100%;
+  }
+
+  .product-image {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+  </style>
+</head>
+<body class="min-h-screen font-sans text-gray-800 antialiased">
+  <!-- NAV -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <!-- Logo Image -->
+      <img src="./images/MBP1.jpg" alt="MB Petrochem Logo" class="h-20 w-auto object-contain" />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#about" class="hover:text-sky-600">About</a>
+      <a href="#products" class="hover:text-sky-600">Products</a>
+      <a href="#services" class="hover:text-sky-600">Services</a>
+      <a href="#contact" class="text-white bg-black px-4 py-2 rounded-md shadow-sm hover:opacity-95">Contact</a>
+    </nav>
+
+    <button class="md:hidden p-2 rounded-md bg-gray-100">☰</button>
+  </div>
+</header>
+
+
+ <!-- PE 90 Petroleum Ether Sectiond -->
+
+
+  <div class="container">
+    <div class="product-image">
+      <img src="./images/03-PE-90-Petroleum-Ether..jpg" alt="PE 90 Petroleum Ether">
+    </div>
+
+    <div class="product-details">
+      <nav class="breadcrumb">Home / Products / Petroleum Ether / SP 60 Petroleum Ether</nav>
+
+      <h1>SP 60 Petroleum Ether</h1>
+      <h2 class="price">125 INR/Literr</h2>
+      <div class="btn">
+        <a href="#" class="quote-btn">Get a Price/Quote></a>
+      </div>
+      
+
+      <div class="details">
+        <h3>Product Details:</h3>
+        <table>
+          <tr><td>Appearance</td><td>Clear Liquid</td></tr>
+          <tr>
+            <td>Usage</td>
+            <td>
+              Pharmaceuticals - Fine Chemical - Rubber Industries - 
+              Paint Industries - Adhesives Industries
+            </td>
+            <tr><td>Purity</td><td>99.50%</td></tr>
+          </tr>
+          <tr><td>Physical Form</td><td>Liquid</td></tr>
+             <tr><td>Storage</td><td>Room Temperature</td></tr>
+             <tr><td>Grade</td><td>SP 60</td></tr>
+        </table>
+        <a href="#container2">Click to View more</a>
+      </div>
+
+    <div class="social-share">
+  <span>Share Your Product:</span>
+  <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
+  <a href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#" class="wa"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="#" class="x"><i class="fa-brands fa-x-twitter"></i></a>
+</div>
+
+ <div class="buttons">
+  <a href="#" class="callback-btn">REQUEST TO CALL BACK</a>
+  <a href="#" class="inquiry-btn">SEND INQUIRY</a>
+</div>
+    </div>
+  </div>
+
+      <div class="container2" id="container2">
+        <section class="section">
+            <h2>SP 60 Petroleum Ether Price And Quantity</h2>
+            <div class="row">
+                <div><strong>Minimum Order Quantity</strong><br>100 Liter</div>
+                <div><strong>Price</strong><br>125 INR/Litre</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>SP 60 Petroleum Ether Product Specifications</h2>
+            <div class="row">
+                
+                <div><strong>Grade</strong><br>SP 60</div>
+                <div><strong>Purity</strong><br>99.50%</div>
+            </div>
+            <div class="row">
+                <div><strong>Physical Form</strong><br>Liquid</div>
+                <div><strong>Usage</strong><br>-Pharmaceuticals - Fine Chemical - Rubber Industries - Paint Industries - Adhesives Industries</div>
+            </div>
+            <div class="row">
+                <div><strong>Appearance</strong><br>Clear Liquid</div>
+                 <div><strong>Storage</strong><br>Room Temperature</div>
+    
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>SP 60 Petroleum Ether Trade Information</h2>
+            <div class="row">
+                <div><strong>Payment Terms</strong><br>Cash in Advance (CID)</div>
+                <div><strong>Supply Ability</strong><br>5000 Liter Per Month</div>
+            </div>
+            <div class="row">
+                <div><strong>Delivery Time</strong><br>2-10 Days</div>
+                <div><strong>Main Domestic Market</strong><br>All India</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Product Description</h2>
+            <p><strong>SP 60 Petroleum Ether </strong>  is a high-purity solvent with a 99.50% purity level, designed to meet the demands of diverse industries including pharmaceuticals, fine chemicals, rubber, paints, and adhesives. This clear liquid ensures reliable performance in critical applications where purity and consistency are paramount. Its liquid physical form simplifies handling and use, making it ideal for industrial processes. SP 60 Petroleum Ether is best stored at room temperature to maintain its quality and effectiveness. With a formulation tailored to meet stringent industry standards, this product delivers exceptional results in multiple sectors that require precision and quality solutions. Perfect for professionals seeking a dependable solvent for various applications. ---
+</p>
+        </section>
+        <section class="section">
+    <h2>FAQs of SP 60 Petroleum Ether:</h2>
+
+    <div class="faq">
+        <p><strong>Q: : What industries commonly use SP 60 Petroleum Ether?<br>
+        A:</strong> SP 60 Petroleum Ether is widely used in pharmaceuticals, fine chemicals, rubber industries, paint industries, and adhesives industries.
+</p>
+    </div>
+
+    <div class="faq">
+        <p><strong>Q: What is the appearance of SP 60 Petroleum Ether?<br>
+        A:</strong>  SP 60 Petroleum Ether has a purity level of 99.50%.</p>
+    </div>
+
+    <div class="faq">
+        <p><strong>Q: What is the purity level of this product?<br>
+        A:</strong>  SP 60 Petroleum Ether has a purity level of 99.50%.</p>
+    </div>
+
+    <div class="faq">
+        <p><strong>Q:How should SP 60 Petroleum Ether be stored?<br>
+        A:</strong> It should be stored at room temperature to ensure its quality and performance.</p>
+    </div>
+
+    <div class="faq">
+        <p><strong>Q:  Is PE 60 Petroleum Ether - Thinner suitable for industrial applications?<br>
+        A:</strong>Yes, it is specifically formulated for industrial applications and meets the requirements of various professional sectors.</p>
+    </div>
+</section>
+
+    </div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-200 py-8">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-bold">MB Petrochem</h4>
+        <p class="mt-2 text-sm">Leading manufacturer of specialty chemicals and solvents.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold">Quick links</h5>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>a
+      </div>
+      <div>
+        <h5 class="font-semibold">Subscribe</h5>
+        <form class="mt-3 flex gap-2">
+          <input placeholder="your email" class="px-3 py-2 rounded bg-gray-800 text-sm w-full" />
+          <button class="px-3 py-2 bg-black rounded">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-xs text-gray-400">© <span id="year"></span> MB Petrochem. All rights reserved.</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      speed: 800,
+      effect: "slide",
+      allowTouchMove: true,
+      navigation: false,
+      pagination: false
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

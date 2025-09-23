@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MB Petrochem</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+ <link rel="stylesheet" href="Products.css">
+
+
+
+
+</head>
+<body class="min-h-screen font-sans text-gray-800 antialiased">
+  <!-- NAV -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <!-- Logo Image -->
+      <img src="./images/MBP1.jpg" alt="MB Petrochem Logo" class="h-20 w-auto object-contain" />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#about" class="hover:text-sky-600">About</a>
+      <a href="Products.html" class="hover:text-sky-600">Products</a>
+      <a href="#services" class="hover:text-sky-600">Services</a>
+      <a href="#contact" class="text-white bg-black px-4 py-2 rounded-md shadow-sm hover:opacity-95">Contact</a>
+    </nav>
+
+    <button class="md:hidden p-2 rounded-md bg-gray-100">☰</button>
+  </div>
+</header>
+
+<section id="Product">
+    <div class="product-section">
+    <h2>Products</h2>
+    <h3>Petroleum Ether</h3>
+    <p>Discover the strength and durability of our Petroleum Ether, crafted to deliver superior performance and reliability, backed by over 27 years of industry expertise as a trusted manufacturer and supplier. Our exclusive range includes PE 40 Petroleum Ether, PE 80 Petroleum Ether, SP 60 Petroleum Ether, PE 120 Petroleum Ether - Thinner, and 03_PE 90 Petroleum Ether, tailored to meet the diverse demands of industrial applications. Renowned for its superlative purity and astounding solvent properties, our Petroleum Ether ensures instant savings in time and efficiency while guaranteeing the lowest price across the market. With supply coverage spanning All India, this versatile product boasts exceptional volatility, superior energy efficiency, outstanding cleaning capabilities, unmatched environmental compatibility, and long-lasting storage stability. Choose our Petroleum Ether to experience unparalleled quality and consistency, making it the perfect solution for both manufacturing and laboratory workflows. Combining exclusive formulation with industry-leading expertise, our products deliver performance of the highest standard, ensuring excellent results every time. Discover the difference in quality with our Petroleum Ether and unlock a new level of industrial reliability and efficiency.</p>
+    </div>
+</section>
+<section id="specification">
+  <div class="flex gap-6">
+    
+    <!-- Left Side Product List -->
+    <div class="w-1/3 product-list">
+      <div class="product-card" id="product1">
+        <h3>P.E. 40 (PETROLEUM ETHER)</h3>
+        <img src="./images/Industrial-Solvent..jpg" alt="PE 40-60" class="product-img">
+        <p class="price"><small>Price:</small> 150 INR/Liter</p>
+        <button class="btn" onclick="toggleDetails('product1')">View More</button>
+      </div>
+
+      <div class="product-card" id="product2">
+        <h3>P.E. 60 (PETROLEUM ETHER)</h3>
+        <img src="./images/Industrial-Solvent..jpg" alt="PE 60-80" class="product-img">
+        <p class="price"><small>Price:</small> 175 INR/Liter</p>
+        <button class="btn" onclick="toggleDetails('product2')">View More</button>
+      </div>
+
+      <div class="product-card" id="product3">
+        <h3>P.E. (SP) 60 (PETROLEUM ETHER)</h3>
+        <img src="./images/Industrial-Solvent..jpg" alt="PE 80-100" class="product-img">
+        <p class="price"><small>Price:</small> 125 INR/Liter</p>
+        <button class="btn" onclick="toggleDetails('product3')">View More</button>
+      </div>
+
+      <div class="product-card" id="product4">
+        <h3>P.E. 80 (PETROLEUM ETHER)</h3>
+        <img src="./images/Industrial-Solvent..jpg" alt="PE 100" class="product-img">
+        <p class="price"><small>Price:</small> 150 INR/Liter</p>
+        <button class="btn" onclick="toggleDetails('product4')">View More</button>
+      </div>
+
+      <div class="product-card" id="product5">
+        <h3>P.E. 90 (PETROLEUM ETHER)</h3>
+        <img src="./images/Industrial-Solvent..jpg" alt="PE 120" class="product-img">
+        <p class="price"><small>Price:</small> 150 INR/Liter</p>
+        <button class="btn" onclick="toggleDetails('product5')">View More</button>
+      </div>
+
+      <div class="product-card" id="product6">
+        <h3>P.E. 100 (PETROLEUM ETHER)</h3>
+        <img src="./images/Industrial-Solvent..jpg" alt="PE 140" class="product-img">
+        <p class="price"><small>Price:</small> 150 INR/Liter</p>
+        <button class="btn" onclick="toggleDetails('product6')">View More</button>
+      </div>
+
+      <div class="product-card" id="product7">
+        <h3>P.E. 120 (PETROLEUM ETHER)</h3>
+        <img src="./images/Industrial-Solvent..jpg" alt="PE 160" class="product-img">
+        <p class="price"><small>Price:</small> 125 INR/Liter</p>
+        <button class="btn" onclick="toggleDetails('product7')">View More</button>
+      </div>
+
+      <div class="product-card" id="product8">
+        <h3>Industrial Solvent (A)<h3>
+        <img src="./images/Industrial-Solvent..jpg" alt="PE 180" class="product-img">
+        <!-- <p class="price"><small>Price:</small> 220 INR/Liter</p> -->
+        <button class="btn" onclick="toggleDetails('product8')">View More</button>
+      </div>
+    </div>
+
+    <!-- Right Side Details -->
+    <div class="w-2/3 product-details" id="detailsPanel">
+      <div class="details-card" id="detailsContent">
+        <h2>Select a product to see details</h2>
+        <p>Click "View More" from the left side list.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-gray-900 text-gray-200 py-8">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-bold">MB Petrochem</h4>
+        <p class="mt-2 text-sm">Leading manufacturer of specialty chemicals and solvents.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold">Quick links</h5>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold">Subscribe</h5>
+        <form class="mt-3 flex gap-2">
+          <input placeholder="your email" class="px-3 py-2 rounded bg-gray-800 text-sm w-full" />
+          <button class="px-3 py-2 bg-black rounded">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-xs text-gray-400">© <span id="year"></span> MB Petrochem. All rights reserved.</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script>
+function toggleDetails(productId) {
+  const card = document.getElementById(productId);
+  const img = card.querySelector("img");
+  const btn = card.querySelector("button");
+  const panel = document.getElementById("detailsContent");
+
+  // Agar same product dobara click hua (View Less case)
+  if (btn.innerText === "View Less") {
+    img.style.display = "block";
+    btn.innerText = "View More";
+    panel.innerHTML = `
+      <h2>Select a product to see details</h2>
+      <p>Click "View More" from the left side list.</p>
+    `;
+    return;
+  }
+
+  // Sabhi ko reset karo
+  resetAll();
+
+  // Current product ko active karo
+  img.style.display = "none";
+  btn.innerText = "View Less";
+  showDetails(productId);
+}
+
+function resetAll() {
+  const cards = document.querySelectorAll(".product-card");
+  cards.forEach(card => {
+    const img = card.querySelector("img");
+    const btn = card.querySelector("button");
+    if (img) img.style.display = "block";
+    if (btn) btn.innerText = "View More";
+  });
+}
+
+function showDetails(productId) {
+  let details = "";
+  
+  if (productId === "product1") {
+    details = `
+      <h2>Petroleum Ether PE 40-60 - Specifications</h2>
+      <table>
+        <tr><th>TEST</th><th>TEST METHOD</th><th>SPECIFICATION</th></tr>
+        <tr><td>Acidity Test</td><td>IS:1448(P:113)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Alkaline Test</td><td>IS:1448(P:53)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Aniline Point ºC</td><td>IS:1448(P:3)</td><td>–</td></tr>
+  <tr><td>Cloud Point & Pour Point</td><td>IS:1448(P:10)</td><td>&lt;0ºC</td></tr>
+  <tr><td>Colour by colour scale</td><td>IS:1448(P:12)</td><td>Clear Liquid</td></tr>
+  <tr><td>Copper Corrosion test</td><td>IS:1448(P:15)</td><td>Negative</td></tr>
+  <tr><td>Distillation Range ºC</td><td>IS:1448(P:18)</td><td>± 3ºC</td></tr>
+  <tr><td>Initial Boiling Point (IBP)</td><td>—</td><td>40.0ºC</td></tr>
+  <tr><td>@50% Recovery</td><td>—</td><td>50.0ºC</td></tr>
+  <tr><td>@90% Recovery</td><td>—</td><td>58.0ºC</td></tr>
+  <tr><td>Dry End Point (DEP)</td><td>—</td><td>60.0ºC</td></tr>
+  <tr><td>Recovery % Vol</td><td>—</td><td>97.0%</td></tr>
+  <tr><td>Doctor Test</td><td>IS:1448(P:19)</td><td>Negative</td></tr>
+  <tr><td>Moisture Test</td><td>ASTM D 95</td><td>&lt;0.01% Max</td></tr>
+  <tr><td>Non Volatile Matter</td><td>IS:1448(P:64)</td><td>&lt;0.01% W/V</td></tr>
+  <tr><td>Density @ 20ºC</td><td>IS:1448(P:16)</td><td>0.645 – 0.665</td></tr>
+      </table>
+      <div class="applications">
+        <h3>Applications</h3>
+        <p>Used as a Solvent in Pharmaceuticals, Rubber Industries, Fine Chemical Industries, Paint Industries, Adhesives Industries etc.</p>
+        <p>Packaging: Available in 200L Drums and SS Tankers.<br>
+       Storage Conditions: Store in cool, dry, well-ventilated areas away from ignition.<br>
+       Safety & Handling</p>
+       <p>Hazard Classification: Flammable Liquid.<br>
+Personal Protective Equipment (PPE): Use gloves, goggles, and proper ventilation.</p>
+      </div>
+    `;
+  } else if (productId === "product2") {
+    details = `
+      <h2>Petroleum Ether PE 60-80 - Specifications</h2>
+      <table>
+      <tr><th>TEST</th><th>TEST METHOD</th><th>SPECIFICATION</th></tr>
+  <tr><td>Acidity Test</td><td>IS:1448(P:113)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Alkaline Test</td><td>IS:1448(P:53)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Aniline Point ºC</td><td>IS:1448(P:3)</td><td>54.0 ºC</td></tr>
+  <tr><td>Cloud Point & Pour Point</td><td>IS:1448(P:10)</td><td>&lt;0 ºC</td></tr>
+  <tr><td>Colour by colour scale</td><td>IS:1448(P:12)</td><td>Clear Liquid</td></tr>
+  <tr><td>Copper Corrosion Test</td><td>IS:1448(P:15)</td><td>Negative</td></tr>
+  <tr><td>Distillation Range ºC</td><td>IS:1448(P:18)</td><td>± 3 ºC</td></tr>
+  <tr><td>Initial Boiling Point (IBP)</td><td>—</td><td>60.0 ºC</td></tr>
+  <tr><td>@50% Recovery</td><td>—</td><td>70.0 ºC</td></tr>
+  <tr><td>@90% Recovery</td><td>—</td><td>78.0 ºC</td></tr>
+  <tr><td>Dry End Point (DEP)</td><td>—</td><td>80.0 ºC</td></tr>
+  <tr><td>Recovery % Vol</td><td>—</td><td>98.0%</td></tr>
+  <tr><td>Doctor Test</td><td>IS:1448(P:19)</td><td>Negative</td></tr>
+  <tr><td>Moisture Test</td><td>ASTM D 95</td><td>&lt;0.01% Max</td></tr>
+  <tr><td>Non Volatile Matter</td><td>IS:1448(P:64)</td><td>&lt;0.01% W/V</td></tr>
+  <tr><td>Density @ 20ºC</td><td>IS:1448(P:16)</td><td>0.670 – 0.700</td></tr>
+      </table>
+      <div class="applications">
+        <h3>Applications</h3>
+  <ul>
+    <li>Used as a Solvent in Pharmaceuticals, Rubber Industries, Fine Chemical<br> Industries, Paint Industries, Adhesives Industries etc.</li>
+  </ul>
+        <h3>Packaging & Storage</h3>
+  <ul>
+    <li>Packaging: Available in 200L Drums and SS Tankers.</li>
+    <li>Storage Conditions: Store in cool, dry, well-ventilated areas away from ignition.</li>
+  </ul>
+  <h3>Safety & Handling</h3>
+  <ul>
+    <li>Hazard Classification: Flammable Liquid.</li>
+    <li>Personal Protective Equipment (PPE): Use gloves, goggles, and proper ventilation.</li>
+  </ul>
+    `;  
+  }else if (productId === "product3") {
+    details = `
+      <h2> Petroleum Ether PE (SP)60 - Specifications</h2>
+      <table>
+      <tr><th>TEST</th><th>TEST METHOD</th><th>SPECIFICATION</th></tr>
+  <tr><td>Acidity Test</td><td>IS:1448(P:113)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Alkaline Test</td><td>IS:1448(P:53)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Aniline Point ºC</td><td>IS:1448(P:3)</td><td>66.0 ºC</td></tr>
+  <tr><td>Cloud Point & Pour Point</td><td>IS:1448(P:10)</td><td>&lt;0 ºC</td></tr>
+  <tr><td>Colour by colour scale</td><td>IS:1448(P:12)</td><td>Clear Liquid</td></tr>
+  <tr><td>Copper Corrosion Test</td><td>IS:1448(P:15)</td><td>Negative</td></tr>
+  <tr><td>Distillation Range ºC</td><td>IS:1448(P:18)</td><td>± 3 ºC</td></tr>
+  <tr><td>Initial Boiling Point (IBP)</td><td>—</td><td>64.0 ºC</td></tr>
+  <tr><td>@50% Recovery</td><td>—</td><td>66.0 ºC</td></tr>
+  <tr><td>@90% Recovery</td><td>—</td><td>67.0 ºC</td></tr>
+  <tr><td>Dry End Point (DEP)</td><td>—</td><td>68.0 ºC</td></tr>
+  <tr><td>Recovery % Vol</td><td>—</td><td>98.0%</td></tr>
+  <tr><td>Doctor Test</td><td>IS:1448(P:19)</td><td>Negative</td></tr>
+  <tr><td>Moisture Test</td><td>ASTM D 95</td><td>&lt;0.01% Max</td></tr>
+  <tr><td>Non Volatile Matter</td><td>IS:1448(P:64)</td><td>&lt;0.01% W/V</td></tr>
+  <tr><td>Density @ 20ºC</td><td>IS:1448(P:16)</td><td>0.670 – 0.685</td></tr>
+      </table>
+      <div class="applications">
+        <h3>Applications</h3>
+  <ul>
+    <li>Used as a Solvent in Pharmaceuticals, Rubber Industries, Fine Chemical Industries, Paint Industries, Adhesives Industries etc.<br>
+Packaging & Storage</li>
+  </ul>
+  <ul>
+    <li>Packaging: Available in 200L Drums and SS Tankers.</li>
+    <li>Storage Conditions: Store in cool, dry, well-ventilated areas away from ignition.</li>
+    <li>Safety Handling</li>
+  </ul>
+  <ul>
+    <li>Hazard Classification: Flammable Liquid.</li>
+    <li>Personal Protective Equipment (PPE): Use gloves, goggles, and proper ventilation.</li>
+  </ul>
+    `;
+  } else if (productId === "product4") {
+    details = `
+           <h2>  Petroleum Ether PE 40-60 - Specifications</h2>
+      <table>
+      <tr><th>TEST</th><th>TEST METHOD</th><th>SPECIFICATION</th></tr>
+  <tr><td>Acidity Test</td><td>IS:1448(P:113)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Alkaline Test</td><td>IS:1448(P:53)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Aniline Point ºC</td><td>IS:1448(P:3)</td><td>-</td></tr>
+  <tr><td>Cloud Point & Pour Point</td><td>IS:1448(P:10)</td><td>&lt;0 ºC</td></tr>
+  <tr><td>Colour by colour scale</td><td>IS:1448(P:12)</td><td>Clear Liquid</td></tr>
+  <tr><td>Copper Corrosion Test</td><td>IS:1448(P:15)</td><td>Negative</td></tr>
+  <tr><td>Distillation Range ºC</td><td>IS:1448(P:18)</td><td>± 3 ºC</td></tr>
+  <tr><td>Initial Boiling Point (IBP)</td><td>—</td><td>40.0 ºC</td></tr>
+  <tr><td>@50% Recovery</td><td>—</td><td>50.0 ºC</td></tr>
+  <tr><td>@90% Recovery</td><td>—</td><td>58.0 ºC</td></tr>
+  <tr><td>Dry End Point (DEP)</td><td>—</td><td>60.0 ºC</td></tr>
+  <tr><td>Recovery % Vol</td><td>—</td><td>97.0%</td></tr>
+  <tr><td>Doctor Test</td><td>IS:1448(P:19)</td><td>Negative</td></tr>
+  <tr><td>Moisture Test</td><td>ASTM D 95</td><td>&lt;0.01% Max</td></tr>
+  <tr><td>Non Volatile Matter</td><td>IS:1448(P:64)</td><td>&lt;0.01% W/V</td></tr>
+  <tr><td>Density @ 20ºC</td><td>IS:1448(P:16)</td><td>0.645 – 0.665</td></tr>
+      </table>
+      <div class="applications">
+        <h3>Applications</h3>
+  <ul>
+    <li>Used as a Solvent in Pharmaceuticals, Rubber Industries, Fine Chemical Industries, Paint Industries, Adhesives Industries etc.<br>
+Packaging & Storage</li>
+  </ul>
+  <ul>
+    <li>Packaging: Available in 200L Drums and SS Tankers.</li>
+    <li>Storage Conditions: Store in cool, dry, well-ventilated areas away from ignition.</li>
+    <li>Safety Handling</li>
+  </ul>
+  <ul>
+    <li>Hazard Classification: Flammable Liquid.</li>
+    <li>Personal Protective Equipment (PPE): Use gloves, goggles, and proper ventilation.</li>
+  </ul>
+    `;
+  } else if (productId === "product5") {
+    details = `
+           <h2> Petroleum Ether PE 90-100 - Specifications</h2>
+      <table>
+      <tr><th>TEST</th><th>TEST METHOD</th><th>SPECIFICATION</th></tr>
+  <tr><td>Acidity Test</td><td>IS:1448(P:113)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Alkaline Test</td><td>IS:1448(P:53)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Aniline Point ºC</td><td>IS:1448(P:3)</td><td>48.0 ºC</td></tr>
+  <tr><td>Cloud Point & Pour Point</td><td>IS:1448(P:10)</td><td>&lt;0 ºC</td></tr>
+  <tr><td>Colour by colour scale</td><td>IS:1448(P:12)</td><td>Clear Liquid</td></tr>
+  <tr><td>Copper Corrosion Test</td><td>IS:1448(P:15)</td><td>Negative</td></tr>
+  <tr><td>Distillation Range ºC</td><td>IS:1448(P:18)</td><td>± 3 ºC</td></tr>
+  <tr><td>Initial Boiling Point (IBP)</td><td>—</td><td>90.0 ºC</td></tr>
+  <tr><td>@50% Recovery</td><td>—</td><td>95.0 ºC</td></tr>
+  <tr><td>@90% Recovery</td><td>—</td><td>98.0 ºC</td></tr>
+  <tr><td>Dry End Point (DEP)</td><td>—</td><td>100.0 ºC</td></tr>
+  <tr><td>Recovery % Vol</td><td>—</td><td>99.0%</td></tr>
+  <tr><td>Doctor Test</td><td>IS:1448(P:19)</td><td>Negative</td></tr>
+  <tr><td>Moisture Test</td><td>ASTM D 95</td><td>&lt;0.01% Max</td></tr>
+  <tr><td>Non Volatile Matter</td><td>IS:1448(P:64)</td><td>&lt;0.01% W/V</td></tr>
+  <tr><td>Density @ 20ºC</td><td>IS:1448(P:16)</td><td>0.690 – 0.720</td></tr>
+      </table>
+      <div class="applications">
+        <h3>Applications</h3>
+  <ul>
+    <li>Used as a Solvent in Pharmaceuticals, Rubber Industries, Fine Chemical Industries, Paint Industries, Adhesives Industries etc.<br>
+Packaging & Storage</li>
+  </ul>
+  <ul>
+    <li>Packaging: Available in 200L Drums and SS Tankers.</li>
+    <li>Storage Conditions: Store in cool, dry, well-ventilated areas away from ignition.</li>
+    <li>Safety Handling</li>
+  </ul>
+  <ul>
+    <li>Hazard Classification: Flammable Liquid.</li>
+    <li>Personal Protective Equipment (PPE): Use gloves, goggles, and proper ventilation.</li>
+  </ul>
+    `;
+  } else if (productId === "product6") {
+    details = `
+          <h2> Petroleum Ether PE 100-120 - Specifications</h2>
+      <table>
+      <tr><th>TEST</th><th>TEST METHOD</th><th>SPECIFICATION</th></tr>
+  <tr><td>Acidity Test</td><td>IS:1448(P:113)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Alkaline Test</td><td>IS:1448(P:53)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Aniline Point ºC</td><td>IS:1448(P:3)</td><td>50.0 ºC</td></tr>
+  <tr><td>Cloud Point & Pour Point</td><td>IS:1448(P:10)</td><td>&lt;0 ºC</td></tr>
+  <tr><td>Colour by colour scale</td><td>IS:1448(P:12)</td><td>Clear Liquid</td></tr>
+  <tr><td>Copper Corrosion Test</td><td>IS:1448(P:15)</td><td>Negative</td></tr>
+  <tr><td>Distillation Range ºC</td><td>IS:1448(P:18)</td><td>± 3 ºC</td></tr>
+  <tr><td>Initial Boiling Point (IBP)</td><td>—</td><td>100.0 ºC</td></tr>
+  <tr><td>@50% Recovery</td><td>—</td><td>110.0 ºC</td></tr>
+  <tr><td>@90% Recovery</td><td>—</td><td>118.0 ºC</td></tr>
+  <tr><td>Dry End Point (DEP)</td><td>—</td><td>120.0 ºC</td></tr>
+  <tr><td>Recovery % Vol</td><td>—</td><td>99.0%</td></tr>
+  <tr><td>Doctor Test</td><td>IS:1448(P:19)</td><td>Negative</td></tr>
+  <tr><td>Moisture Test</td><td>ASTM D 95</td><td>&lt;0.01% Max</td></tr>
+  <tr><td>Non Volatile Matter</td><td>IS:1448(P:64)</td><td>&lt;0.01% W/V</td></tr>
+  <tr><td>Density @ 20ºC</td><td>IS:1448(P:16)</td><td>	0.720 – 0.740</td></tr>
+      </table>
+      <div class="applications">
+        <h3>Applications</h3>
+  <ul>
+    <li>Used as a Solvent in Pharmaceuticals, Rubber Industries, Fine Chemical Industries, Paint Industries, Adhesives Industries etc.<br>
+Packaging & Storage</li>
+  </ul>
+  <ul>
+    <li>Packaging: Available in 200L Drums and SS Tankers.</li>
+    <li>Storage Conditions: Store in cool, dry, well-ventilated areas away from ignition.</li>
+    <li>Safety Handling</li>
+  </ul>
+  <ul>
+    <li>Hazard Classification: Flammable Liquid.</li>
+    <li>Personal Protective Equipment (PPE): Use gloves, goggles, and proper ventilation.</li>
+  </ul>
+    `;
+  } else if (productId === "product7") {
+    details = `
+      <h2>Petroleum Ether PE 120 - Specifications</h2>
+       <table>
+      <tr><th>TEST</th><th>TEST METHOD</th><th>SPECIFICATION</th></tr>
+  <tr><td>Acidity Test</td><td>IS:1448(P:113)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Alkaline Test</td><td>IS:1448(P:53)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Aniline Point ºC</td><td>IS:1448(P:3)</td><td>47.0 ºC</td></tr>
+  <tr><td>Cloud Point & Pour Point</td><td>IS:1448(P:10)</td><td>&lt;0 ºC</td></tr>
+  <tr><td>Colour by colour scale</td><td>IS:1448(P:12)</td><td>Clear Liquid</td></tr>
+  <tr><td>Copper Corrosion Test</td><td>IS:1448(P:15)</td><td>Negative</td></tr>
+  <tr><td>Distillation Range ºC</td><td>IS:1448(P:18)</td><td>± 3 ºC</td></tr>
+  <tr><td>Initial Boiling Point (IBP)</td><td>—</td><td>120.0 ºC</td></tr>
+  <tr><td>@50% Recovery</td><td>—</td><td>150.0 ºC</td></tr>
+  <tr><td>@90% Recovery</td><td>—</td><td>170.0 ºC</td></tr>
+  <tr><td>Dry End Point (DEP)</td><td>—</td><td>180.0 ºC</td></tr>
+  <tr><td>Recovery % Vol</td><td>—</td><td>99.0%</td></tr>
+  <tr><td>Doctor Test</td><td>IS:1448(P:19)</td><td>Negative</td></tr>
+  <tr><td>Moisture Test</td><td>ASTM D 95</td><td>&lt;0.01% Max</td></tr>
+  <tr><td>Non Volatile Matter</td><td>IS:1448(P:64)</td><td>&lt;0.01% W/V</td></tr>
+  <tr><td>Density @ 20ºC</td><td>IS:1448(P:16)</td><td>	0.750 – 0.770</td></tr>
+      </table>
+      <div class="applications">
+        <h3>Applications</h3>
+  <ul>
+    <li>Used as a Solvent in Pharmaceuticals, Rubber Industries, Fine Chemical Industries, Paint Industries, Adhesives Industries etc.<br>
+Packaging & Storage</li>
+  </ul>
+  <ul>
+    <li>Packaging: Available in 200L Drums and SS Tankers.</li>
+    <li>Storage Conditions: Store in cool, dry, well-ventilated areas away from ignition.</li>
+    <li>Safety Handling</li>
+  </ul>
+  <ul>
+    <li>Hazard Classification: Flammable Liquid.</li>
+    <li>Personal Protective Equipment (PPE): Use gloves, goggles, and proper ventilation.</li>
+  </ul>
+    `;
+  } else if (productId === "product8") {
+    details = `
+     <h2>Industrial Solvent (A) - Specifications</h2>
+      <table>
+      <tr><th>TEST</th><th>TEST METHOD</th><th>SPECIFICATION</th></tr>
+  <tr><td>Acidity Test</td><td>IS:1448(P:113)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Alkaline Test</td><td>IS:1448(P:53)</td><td>0.01 ML N/1% W/V</td></tr>
+  <tr><td>Aniline Point ºC</td><td>IS:1448(P:3)</td><td>55.0 ºC</td></tr>
+  <tr><td>Cloud Point & Pour Point</td><td>IS:1448(P:10)</td><td>&lt;0 ºC</td></tr>
+  <tr><td>Colour by colour scale</td><td>IS:1448(P:12)</td><td>Clear Liquid</td></tr>
+  <tr><td>Copper Corrosion Test</td><td>IS:1448(P:15)</td><td>Negative</td></tr>
+  <tr><td>Distillation Range ºC</td><td>IS:1448(P:18)</td><td>± 3 ºC</td></tr>
+  <tr><td>Initial Boiling Point (IBP)</td><td>—</td><td>55.0 ºC</td></tr>
+  <tr><td>@50% Recovery</td><td>—</td><td>68.0 ºC</td></tr>
+  <tr><td>@90% Recovery</td><td>—</td><td>110.0 ºC</td></tr>
+  <tr><td>Dry End Point (DEP)</td><td>—</td><td>115.0 ºC</td></tr>
+  <tr><td>Recovery % Vol</td><td>—</td><td>98.0%</td></tr>
+  <tr><td>Doctor Test</td><td>IS:1448(P:19)</td><td>Negative</td></tr>
+  <tr><td>Moisture Test</td><td>ASTM D 95</td><td>&lt;0.01% Max</td></tr>
+  <tr><td>Non Volatile Matter</td><td>IS:1448(P:64)</td><td>&lt;0.01% W/V</td></tr>
+  <tr><td>Density @ 20ºC</td><td>IS:1448(P:16)</td><td>0.675 – 0.700</td></tr>
+      </table>
+      <div class="applications">
+        <h3>Applications</h3>
+  <ul>
+    <li>Used as a Solvent in Pharmaceuticals, Rubber Industries, Fine Chemical Industries, Paint Industries, Adhesives Industries etc.<br>
+Packaging & Storage</li>
+  </ul>
+  <ul>
+    <li>Packaging: Available in 200L Drums and SS Tankers.</li>
+    <li>Storage Conditions: Store in cool, dry, well-ventilated areas away from ignition.</li>
+    <li>Safety Handling</li>
+  </ul>
+  <ul>
+    <li>Hazard Classification: Flammable Liquid.</li>
+    <li>Personal Protective Equipment (PPE): Use gloves, goggles, and proper ventilation.</li>
+  </ul>
+    `;
+  }
+
+  document.getElementById("detailsContent").innerHTML = details;
+}
+  </script>
+</body>
+</html>
