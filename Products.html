@@ -36,6 +36,8 @@
 <section id="Product">
     <div class="product-section">
     <h2>Products</h2>
+    <img src="images/newcontainer3.jpg">
+    <p class="text">We supply these grades in 200 liter, 100 liter, 50 liter, and 25 liter MS epoxy coated new barrels, ensuring maximum product purity, extended shelf life, and safe handling during transportation and storage.</p>
     <h3>Petroleum Ether</h3>
     <p>Discover the strength and durability of our Petroleum Ether, crafted to deliver superior performance and reliability, backed by over 27 years of industry expertise as a trusted manufacturer and supplier. Our exclusive range includes PE 40 Petroleum Ether, PE 80 Petroleum Ether, SP 60 Petroleum Ether, PE 120 Petroleum Ether - Thinner, and 03_PE 90 Petroleum Ether, tailored to meet the diverse demands of industrial applications. Renowned for its superlative purity and astounding solvent properties, our Petroleum Ether ensures instant savings in time and efficiency while guaranteeing the lowest price across the market. With supply coverage spanning All India, this versatile product boasts exceptional volatility, superior energy efficiency, outstanding cleaning capabilities, unmatched environmental compatibility, and long-lasting storage stability. Choose our Petroleum Ether to experience unparalleled quality and consistency, making it the perfect solution for both manufacturing and laboratory workflows. Combining exclusive formulation with industry-leading expertise, our products deliver performance of the highest standard, ensuring excellent results every time. Discover the difference in quality with our Petroleum Ether and unlock a new level of industrial reliability and efficiency.</p>
     </div>
@@ -105,8 +107,7 @@
     <!-- Right Side Details -->
     <div class="w-2/3 product-details" id="detailsPanel">
       <div class="details-card" id="detailsContent">
-        <h2>Select a product to see details</h2>
-        <p>Click "View More" from the left side list.</p>
+        
       </div>
     </div>
   </div>
@@ -141,25 +142,24 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  <script>
+ <script>
 function toggleDetails(productId) {
   const card = document.getElementById(productId);
   const img = card.querySelector("img");
   const btn = card.querySelector("button");
-  const panel = document.getElementById("detailsContent");
 
   // Agar same product dobara click hua (View Less case)
   if (btn.innerText === "View Less") {
     img.style.display = "block";
     btn.innerText = "View More";
-    panel.innerHTML = `
-      <h2>Select a product to see details</h2>
-      <p>Click "View More" from the left side list.</p>
-    `;
+    showDetails("product1"); // 👈 Default wapas Product 1
+    const firstCard = document.getElementById("product1");
+    firstCard.querySelector("img").style.display = "none";
+    firstCard.querySelector("button").innerText = "View Less";
     return;
   }
 
-  // Sabhi ko reset karo
+  // Sabhi reset karo
   resetAll();
 
   // Current product ko active karo
@@ -180,28 +180,28 @@ function resetAll() {
 
 function showDetails(productId) {
   let details = "";
-  
+
   if (productId === "product1") {
     details = `
       <h2>Petroleum Ether PE 40-60 - Specifications</h2>
       <table>
         <tr><th>TEST</th><th>TEST METHOD</th><th>SPECIFICATION</th></tr>
         <tr><td>Acidity Test</td><td>IS:1448(P:113)</td><td>0.01 ML N/1% W/V</td></tr>
-  <tr><td>Alkaline Test</td><td>IS:1448(P:53)</td><td>0.01 ML N/1% W/V</td></tr>
-  <tr><td>Aniline Point ºC</td><td>IS:1448(P:3)</td><td>–</td></tr>
-  <tr><td>Cloud Point & Pour Point</td><td>IS:1448(P:10)</td><td>&lt;0ºC</td></tr>
-  <tr><td>Colour by colour scale</td><td>IS:1448(P:12)</td><td>Clear Liquid</td></tr>
-  <tr><td>Copper Corrosion test</td><td>IS:1448(P:15)</td><td>Negative</td></tr>
-  <tr><td>Distillation Range ºC</td><td>IS:1448(P:18)</td><td>± 3ºC</td></tr>
-  <tr><td>Initial Boiling Point (IBP)</td><td>—</td><td>40.0ºC</td></tr>
-  <tr><td>@50% Recovery</td><td>—</td><td>50.0ºC</td></tr>
-  <tr><td>@90% Recovery</td><td>—</td><td>58.0ºC</td></tr>
-  <tr><td>Dry End Point (DEP)</td><td>—</td><td>60.0ºC</td></tr>
-  <tr><td>Recovery % Vol</td><td>—</td><td>97.0%</td></tr>
-  <tr><td>Doctor Test</td><td>IS:1448(P:19)</td><td>Negative</td></tr>
-  <tr><td>Moisture Test</td><td>ASTM D 95</td><td>&lt;0.01% Max</td></tr>
-  <tr><td>Non Volatile Matter</td><td>IS:1448(P:64)</td><td>&lt;0.01% W/V</td></tr>
-  <tr><td>Density @ 20ºC</td><td>IS:1448(P:16)</td><td>0.645 – 0.665</td></tr>
+        <tr><td>Alkaline Test</td><td>IS:1448(P:53)</td><td>0.01 ML N/1% W/V</td></tr>
+        <tr><td>Aniline Point ºC</td><td>IS:1448(P:3)</td><td>–</td></tr>
+        <tr><td>Cloud Point & Pour Point</td><td>IS:1448(P:10)</td><td>&lt;0ºC</td></tr>
+        <tr><td>Colour by colour scale</td><td>IS:1448(P:12)</td><td>Clear Liquid</td></tr>
+        <tr><td>Copper Corrosion test</td><td>IS:1448(P:15)</td><td>Negative</td></tr>
+        <tr><td>Distillation Range ºC</td><td>IS:1448(P:18)</td><td>± 3ºC</td></tr>
+        <tr><td>Initial Boiling Point (IBP)</td><td>—</td><td>40.0ºC</td></tr>
+        <tr><td>@50% Recovery</td><td>—</td><td>50.0ºC</td></tr>
+        <tr><td>@90% Recovery</td><td>—</td><td>58.0ºC</td></tr>
+        <tr><td>Dry End Point (DEP)</td><td>—</td><td>60.0ºC</td></tr>
+        <tr><td>Recovery % Vol</td><td>—</td><td>97.0%</td></tr>
+        <tr><td>Doctor Test</td><td>IS:1448(P:19)</td><td>Negative</td></tr>
+        <tr><td>Moisture Test</td><td>ASTM D 95</td><td>&lt;0.01% Max</td></tr>
+        <tr><td>Non Volatile Matter</td><td>IS:1448(P:64)</td><td>&lt;0.01% W/V</td></tr>
+        <tr><td>Density @ 20ºC</td><td>IS:1448(P:16)</td><td>0.645 – 0.665</td></tr>
       </table>
       <div class="applications">
         <h3>Applications</h3>
@@ -481,8 +481,13 @@ Packaging & Storage</li>
     `;
   }
 
-  document.getElementById("detailsContent").innerHTML = details;
+   document.getElementById("detailsContent").innerHTML = details;
 }
-  </script>
+
+// Page load hote hi first product show karo
+window.addEventListener("DOMContentLoaded", function () {
+  toggleDetails("product1");
+});
+</script>
 </body>
 </html>
