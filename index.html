@@ -45,18 +45,26 @@
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <a href="index.html" class="flex items-center gap-3">
-      <!-- Logo Image -->
       <img src="./images/MBP1.jpg" alt="MB Petrochem Logo" class="h-20 w-auto object-contain" />
     </a>
 
-    <nav class="hidden md:flex items-center gap-6 text-sm">
-      <a href="#about" class="hover:text-sky-600">About</a>
-      <a href="Products.html" class="hover:text-sky-600">Products</a>
-      <a href="#services" class="hover:text-sky-600">Services</a>
-      <a href="#contact" class="text-white bg-black px-4 py-2 rounded-md shadow-sm hover:opacity-95">Contact</a>
-    </nav>
+    <!-- Toggle button -->
+    <button class="md:hidden p-2 rounded-md bg-gray-100" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav">
+      ☰
+    </button>
 
-    <button class="md:hidden p-2 rounded-md bg-gray-100">☰</button>
+    <!-- Nav links (collapse wrapper) -->
+    <div class="collapse navbar-collapse md:flex md:items-center md:gap-6 text-sm" id="navbarNav">
+      <a href="#about" class="hover:text-sky-600 block py-2 md:py-0">About</a>
+      <a href="Products.html" class="hover:text-sky-600 block py-2 md:py-0">Products</a>
+      <a href="#services" class="hover:text-sky-600 block py-2 md:py-0">Services</a>
+      <a href="#contact" class="text-white bg-black px-4 py-2 rounded-md shadow-sm hover:opacity-95 block md:inline-block">
+        Contact
+      </a>
+    </div>
   </div>
 </header>
 
