@@ -44,31 +44,35 @@
   <!-- NAV -->
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
     <a href="index.html" class="flex items-center gap-3">
-      <img src="./images/MBP1.jpg" alt="MB Petrochem Logo" class="h-20 w-auto object-contain" />
+      <img src="./images/MBP1.jpg" alt="MB Petrochem Logo" class="h-16 w-auto object-contain" />
     </a>
 
-    <!-- Toggle button -->
-    <button class="md:hidden p-2 rounded-md bg-gray-100" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav">
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="#about" class="hover:text-sky-600">About</a>
+      <a href="Products.html" class="hover:text-sky-600">Products</a>
+      <a href="#services" class="hover:text-sky-600">Services</a>
+      <a href="#contact" class="bg-black text-white px-4 py-2 rounded-md shadow hover:bg-sky-700 transition">Contact</a>
+    </nav>
+
+    <!-- Mobile button -->
+    <button id="menu-btn" class="md:hidden p-2 rounded-md bg-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500">
       ☰
     </button>
+  </div>
 
-    <!-- Nav links (collapse wrapper) -->
-    <div class="collapse navbar-collapse md:flex md:items-center md:gap-6 text-sm" id="navbarNav">
-      <a href="#about" class="hover:text-sky-600 block py-2 md:py-0">About</a>
-      <a href="Products.html" class="hover:text-sky-600 block py-2 md:py-0">Products</a>
-      <a href="#services" class="hover:text-sky-600 block py-2 md:py-0">Services</a>
-      <a href="#contact" class="text-white bg-black px-4 py-2 rounded-md shadow-sm hover:opacity-95 block md:inline-block">
-        Contact
-      </a>
-    </div>
+  <!-- Mobile Nav (hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md border-t">
+    <nav class="flex flex-col px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="#about" class="hover:text-sky-600">About</a>
+      <a href="Products.html" class="hover:text-sky-600">Products</a>
+      <a href="#services" class="hover:text-sky-600">Services</a>
+      <a href="#contact" class="bg-black text-white px-4 py-2 rounded-md shadow hover:bg-sky-700 transition text-center">Contact</a>
+    </nav>
   </div>
 </header>
-
-
   <!-- HERO SLIDER -->
   <section class="relative">
     <div class="swiper mySwiper h-[60vh] min-h-[420px]">
@@ -293,6 +297,15 @@
     });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script>
+  // Toggle mobile menu
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
