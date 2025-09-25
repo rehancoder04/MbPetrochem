@@ -19,14 +19,9 @@
 }
 .text
 {
-    margin-top: 30px;
-    font-weight: 600;
-    font-size: 30px !important;
-    text-align: center;
-     display: flex;
-  justify-content: center;  /* horizontal center */
-  align-items: center;      /* vertical center (अगर height दी तो) */
-  text-align: center;  
+   margin-top: 30px;
+  font-weight: 600;
+  font-size: 30px !important;
 }
 .product-section {
     width: 80%;
@@ -199,7 +194,12 @@ th {
     .flex {
         flex-direction: column;
         gap: 20px; /* sections में spacing */
+        
     }
+     .text {
+    font-size: 20px !important; /* और छोटा font ताकि fit हो जाए */
+    /* margin-top: 15px; */
+  }
 
     .product-list, 
     .product-details {
@@ -217,9 +217,9 @@ th {
     }
 
     .product-card img {
-        width: 100%;       /* पूरी चौड़ाई */
+        width: 100%;       
         height: 150px;
-        max-height: unset; /* कटना बंद */
+        max-height: unset; 
         object-fit: contain;
     }
 
@@ -228,7 +228,7 @@ th {
     }
 
     .btn {
-         width: 40%; 
+         width: 40%;  
     font-size: 13px;
     padding: 6px 10px;
     }
@@ -242,7 +242,7 @@ th {
     }
 
     .product-details {
-        margin-top: 10px; /* नीचे gap */
+        margin-top: 10px; 
     }
 }
 

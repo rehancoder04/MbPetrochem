@@ -17,20 +17,36 @@
   <!-- NAV -->
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
     <a href="index.html" class="flex items-center gap-3">
-      <!-- Logo Image -->
-      <img src="./images/MBP1.jpg" alt="MB Petrochem Logo" class="h-20 w-auto object-contain" />
+      <img src="./images/MBP1.jpg" alt="MB Petrochem Logo" class="h-16 w-auto object-contain" />
     </a>
 
-    <nav class="hidden md:flex items-center gap-6 text-sm">
-      <a href="#about" class="hover:text-sky-600">About</a>
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="about.html" class="hover:text-sky-600">About</a>
       <a href="Products.html" class="hover:text-sky-600">Products</a>
       <a href="#services" class="hover:text-sky-600">Services</a>
-      <a href="#contact" class="text-white bg-black px-4 py-2 rounded-md shadow-sm hover:opacity-95">Contact</a>
+      <a href="#contact" class="bg-black text-white px-4 py-2 rounded-md shadow hover:bg-sky-700 transition">Contact</a>
     </nav>
 
-    <button class="md:hidden p-2 rounded-md bg-gray-100">☰</button>
+    <!-- Mobile button -->
+    <button id="menu-btn" class="md:hidden p-2 rounded-md bg-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500">
+      ☰
+    </button>
   </div>
+
+  <!-- Mobile Nav (hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md border-t">
+  <nav class="flex flex-col items-end px-6 py-4 space-y-3 text-sm font-medium text-right">
+    <a href="About.html" class="hover:text-sky-600">About</a>
+    <a href="Products.html" class="hover:text-sky-600">Products</a>
+    <a href="#services" class="hover:text-sky-600">Services</a>
+    <a href="#contact" class="bg-black text-white px-4 py-2 rounded-md shadow hover:bg-sky-700 transition">
+      Contact
+    </a>
+  </nav>
+</div>
 </header>
 
 <section id="Product">
@@ -488,6 +504,15 @@ Packaging & Storage</li>
 window.addEventListener("DOMContentLoaded", function () {
   toggleDetails("product1");
 });
+</script>
+<script>
+  // Toggle mobile menu
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
 </script>
 </body>
 </html>
