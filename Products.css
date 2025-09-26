@@ -112,6 +112,14 @@ small {
   box-shadow: 0 3px 8px rgba(37, 117, 252, 0.35);
   transition: all 0.3s ease;
 }
+.product-list button
+{
+  color: #fff;
+}
+.product-list button:hover
+{
+  color: #fff;
+}
 .btn:hover {
    background: linear-gradient(135deg, #0056d2, #003c99);
   transform: translateY(-2px) scale(1.05);
@@ -405,4 +413,3 @@ nav .contact-btn:hover {
         margin-top: 10px; /* नीचे gap */
     }
 }
-
