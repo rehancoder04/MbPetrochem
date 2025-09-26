@@ -162,7 +162,159 @@ th {
     color: #444;
     margin-bottom: 8px;
 }
+footer {
+  background: linear-gradient(180deg,#111827,#0f172a);
+}
+footer input {
+  border:1px solid #374151;
+}
+footer button {
+  background: linear-gradient(90deg,#0ea5e9,#1e3a8a);
+  color:#fff;
+  font-weight:600;
+  transition: all 0.3s;
+}
+footer button:hover {
+  transform: scale(1.05);
+}
+footer a {
+  text-decoration: none !important;
+  color: #d1d5db; /* light gray */
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #0ea5e9;
+}
+nav a {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+    color: #000;
+  text-decoration: none !important;
+  font-size: 19px;
+  padding: 10px;
+  font-weight: 600;
+}
+nav a.active::after {
+  width: 100%;
+}
 
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: red;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #000;
+}
+nav a:hover::after {
+  width: 100%;
+}
+nav a:active::after
+{
+  width:100%;
+}
+nav .contact-btn {
+  background: linear-gradient(90deg,#0ea5e9,#0369a1);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(14,165,233,0.3);
+}
+nav .contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(14,165,233,0.5);
+}
+#contact .border {
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+#contact .border:hover {
+  transform: translateY(-5px);
+  border-color: #0ea5e9;
+  box-shadow: 0 8px 20px rgba(14,165,233,0.2);
+}
+.overlay a {
+  /* background: linear-gradient(90deg,#0ea5e9,#0369a1); */
+  color: #000 !important;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(14,165,233,0.3);
+  text-decoration: none;
+}
+
+#contact .contact-card {
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+#contact .contact-card:hover {
+  border-left-color: #0ea5e9;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(14,165,233,0.15);
+}
+#contact .contact-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+}
+#contact .contact-card h4 i {
+  color: #0ea5e9;
+  font-size: 1.2rem;
+}
+#contact form input,
+#contact form textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+}
+#contact form input:focus,
+#contact form textarea:focus {
+  border-color: #0ea5e9;
+  outline: none;
+  box-shadow: 0 0 6px rgba(14,165,233,0.4);
+}
+#contact form button {
+  background: linear-gradient(90deg,#0ea5e9,#1e3a8a) !important;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#contact form {
+  min-height: 100px;   
+  max-height: 490px;   
+  resize: vertical; 
+  margin-top: 95px;   
+  transition: color 0.3s ease, transform 0.2s ease;
+    border: 1px solid #e5e7eb;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+#contact form:hover {
+    border-left-color: #0ea5e9;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(14,165,233,0.15);
+}
+
+#contact form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(14,165,233,0.4)
+}
+#contact a {
+  text-decoration: none;  
+}
 /* =============== Responsive Design =============== */
 @media (max-width: 992px) {
     .flex {
@@ -183,6 +335,14 @@ th {
       max-height: none;
     }
 }
+
+ @media (max-width: 1024px)
+   {
+    #contact form
+    {
+      margin-top: 0px
+    }
+   }
 @media (max-width: 1190px) {
   .product-card h3 {
       font-size: 14px;   /* थोड़ा छोटा कर देंगे */
@@ -217,9 +377,9 @@ th {
     }
 
     .product-card img {
-        width: 100%;       
+        width: 100%;       /* पूरी चौड़ाई */
         height: 150px;
-        max-height: unset; 
+        max-height: unset; /* कटना बंद */
         object-fit: contain;
     }
 
@@ -228,7 +388,7 @@ th {
     }
 
     .btn {
-         width: 40%;  
+         width: 40%;   /* full nhi hoga, chhota ho jayega */
     font-size: 13px;
     padding: 6px 10px;
     }
@@ -242,7 +402,7 @@ th {
     }
 
     .product-details {
-        margin-top: 10px; 
+        margin-top: 10px; /* नीचे gap */
     }
 }
 

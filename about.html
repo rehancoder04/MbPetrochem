@@ -6,7 +6,11 @@
   <title>MB Petrochem</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <style>
    *
  {
@@ -110,6 +114,158 @@ small {
   min-width: 800px;
   margin: 20px auto;
 }
+footer {
+  background: linear-gradient(180deg,#111827,#0f172a);
+}
+footer input {
+  border:1px solid #374151;
+}
+footer button {
+  background: linear-gradient(90deg,#0ea5e9,#1e3a8a);
+  color:#fff;
+  font-weight:600;
+  transition: all 0.3s;
+}
+footer button:hover {
+  transform: scale(1.05);
+}
+footer a {
+  text-decoration: none !important;
+  color: #d1d5db; /* light gray */
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #0ea5e9;
+}
+nav a {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+    color: #000;
+  text-decoration: none !important;
+  font-size: 19px;
+  padding: 10px;
+  font-weight: 600;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: red;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #000;
+}
+nav a:hover::after {
+  width: 100%;
+}
+nav a:active::after
+{
+  width:100%;
+}
+nav .contact-btn {
+  background: linear-gradient(90deg,#0ea5e9,#0369a1);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(14,165,233,0.3);
+}
+nav .contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(14,165,233,0.5);
+}
+#contact .border {
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+#contact .border:hover {
+  transform: translateY(-5px);
+  border-color: #0ea5e9;
+  box-shadow: 0 8px 20px rgba(14,165,233,0.2);
+}
+.overlay a {
+  /* background: linear-gradient(90deg,#0ea5e9,#0369a1); */
+  color: #000 !important;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(14,165,233,0.3);
+  text-decoration: none;
+}
+nav a.active::after {
+  width: 100%;
+}
+
+#contact .contact-card {
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+#contact .contact-card:hover {
+  border-left-color: #0ea5e9;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(14,165,233,0.15);
+}
+#contact .contact-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+}
+#contact .contact-card h4 i {
+  color: #0ea5e9;
+  font-size: 1.2rem;
+}
+#contact form input,
+#contact form textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+}
+#contact form input:focus,
+#contact form textarea:focus {
+  border-color: #0ea5e9;
+  outline: none;
+  box-shadow: 0 0 6px rgba(14,165,233,0.4);
+}
+#contact form button {
+  background: linear-gradient(90deg,#0ea5e9,#1e3a8a) !important;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#contact form {
+  min-height: 100px;   
+  max-height: 490px;   
+  resize: vertical; 
+  margin-top: 95px;   
+  transition: color 0.3s ease, transform 0.2s ease;
+    border: 1px solid #e5e7eb;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+#contact form:hover {
+    border-left-color: #0ea5e9;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(14,165,233,0.15);
+}
+
+#contact form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(14,165,233,0.4)
+}
+#contact a {
+  text-decoration: none;  
+}
 
 .product-specs th,
 .product-specs td {
@@ -163,6 +319,13 @@ tbody tr td:first-child {
     padding: 16px 10px;
   }
 }
+ @media (max-width: 1024px)
+   {
+    #contact form
+    {
+      margin-top: 0px
+    }
+   }
 }
 
   </style>
@@ -205,46 +368,48 @@ tbody tr td:first-child {
 </header>
 
 <section id="about">
-    <h2>About Us</h2>
-    <p>
+    <h2 data-aos="fade-up">About Us</h2>
+    <p data-aos="fade-up">
 Maa Bijasani Petro Chem Pvt. Ltd. Is a trusted name in the chemical manufacturing sector, specializing in the production and supply of high-quality Petroleum Ether and Industrial Solvents. Based on a strong foundation of technical expertise and industry experience, our company is committed to delivering reliable, consistent and high-performance chemical solutions to clients across diverse industrial segments. Since our inception, we have focused on maintaining Strick quality control, operational efficiency and customer-centric service, which has helped us build a strong reputation in the market.<p>
 
-<p>Our manufacturing facility is equipped with modern infrastructure and advanced machinery, allowing us to meet bulk requirements without compromising on quality or timelines. Each batch undergoes thorough testing to ensure it meets industry standards for purity, composition and performance. Our products are widely used in laboratories, pharmaceuticals, paint, manufacturing, Cosmetics, adhesives and various other industrial applications.</p>
+<p data-aos="fade-up">Our manufacturing facility is equipped with modern infrastructure and advanced machinery, allowing us to meet bulk requirements without compromising on quality or timelines. Each batch undergoes thorough testing to ensure it meets industry standards for purity, composition and performance. Our products are widely used in laboratories, pharmaceuticals, paint, manufacturing, Cosmetics, adhesives and various other industrial applications.</p>
 
-<p>Furthermore, our company believes in fostering long-term business relationships by providing prompt deliveries, customized solutions and transparent dealings. Our goal is to continuously evolve with industry advancements while upholding our commitment to quality, safety and environmental responsibility.</p>
+<p data-aos="fade-up">Furthermore, our company believes in fostering long-term business relationships by providing prompt deliveries, customized solutions and transparent dealings. Our goal is to continuously evolve with industry advancements while upholding our commitment to quality, safety and environmental responsibility.</p>
 <div class="images">
-<img src="images/product1.jpg">
-<img src="images/product19.jpg">
+<img src="images/product1.jpg" data-aos="fade-right">
+<img src="images/product19.jpg" data-aos="fade-left">
 </div>
 </section>
 <div class="container">
-        <h2>OUR PRODUCTS' USES</h2>
+        <h2 data-aos="fade-up">OUR PRODUCTS' USES</h2>
         <ul class="uses-list">
-            <li><span>1. Pharmaceuticals:</span> Used as solvents or in formulations for medicinal products.</li>
-            <li><span>2. Fine Chemicals:</span> Applied in chemical synthesis and as a solvent in manufacturing specialty chemicals.</li>
-            <li><span>4. Paint Industries:</span> Used as a thinner and solvent in paint formulations.</li>
-            <li><span>3. Rubber Industries:</span> Used in rubber formulations and processing.</li>
-            <li><span>5. Cosmetic:</span></li>
-            <li><span>6. Adhesives Industries:</span> Applied as a solvent for adhesives and bonding agents.</li>
+            <li data-aos="fade-up"><span>1. Pharmaceuticals:</span> Used as solvents or in formulations for medicinal products.</li>
+            <li data-aos="fade-up"><span>2. Fine Chemicals:</span> Applied in chemical synthesis and as a solvent in manufacturing specialty chemicals.</li>
+            <li data-aos="fade-up"><span>4. Paint Industries:</span> Used as a thinner and solvent in paint formulations.</li>
+            <li data-aos="fade-up"><span>3. Rubber Industries:</span> Used in rubber formulations and processing.</li>
+            <li data-aos="fade-up"><span>5. Cosmetic:</span></li>
+            <li data-aos="fade-up"><span>6. Adhesives Industries:</span> Applied as a solvent for adhesives and bonding agents.</li>
         </ul>
 
-        <h2>PRODUCTS LIST</h2>
-        <div class="products-list">
-            <div class="product-box"><small>P.E. 40</small>(Petroleum Ether)</div>
-            <div class="product-box"><small>P.E. 60</small>(Petroleum Ether)</div>
-            <div class="product-box"><small>P.E. (SP) 60 </small>(Petroleum Ether)</div>
-            <div class="product-box"><small>Industrial Solvent</small> <small>(A)</small></div>
-            <div class="product-box"><small>P.E. 100</small> (Petroleum Ether)</div>
-            <div class="product-box"><small>P.E. 120</small></small> (Petroleum Ether)</div>
-            <div class="product-box"><small>P.E. 80 </small>(Petroleum Ether)</div>
-            <div class="product-box"><small>P.E. 90 </small>(Petroleum Ether)</div>
-            <div class="product-box"><small>MTO MB 150</small></div>
-            <div class="product-box"><small>MTO MB 200</small></div>
+    
+    <h2 data-aos="fade-up">PRODUCTS LIST</h2>
+    <div class="products-list">
+        <div class="product-box" data-aos="zoom-in"><small>P.E. 40</small>(Petroleum Ether)</div>
+        <div class="product-box" data-aos="zoom-in"><small>P.E. 60</small>(Petroleum Ether)</div>
+        <div class="product-box" data-aos="zoom-in"><small>P.E. (SP) 60 </small>(Petroleum Ether)</div>
+        <div class="product-box" data-aos="zoom-in"><small>Industrial Solvent</small> <small>(A)</small></div>
+        <div class="product-box" data-aos="zoom-in"><small>P.E. 100</small> (Petroleum Ether)</div>
+        <div class="product-box" data-aos="zoom-in"><small>P.E. 120</small></small> (Petroleum Ether)</div>
+        <div class="product-box" data-aos="zoom-in"><small>P.E. 80 </small>(Petroleum Ether)</div>
+        <div class="product-box" data-aos="zoom-in"><small>P.E. 90 </small>(Petroleum Ether)</div>
+        <div class="product-box" data-aos="zoom-in"><small>MTO MB 150</small></div>
+        <div class="product-box" data-aos="zoom-in"><small>MTO MB 200</small></div>
+    </div>
         </div>
-        </div>
-    <section class="product-specs">
-  <h2>PRODUCT DESCRIPTION</h2>
-  <div class="table-container">
+   
+<section class="product-specs">
+  <h2 data-aos="fade-up">PRODUCT DESCRIPTION</h2>
+  <div class="table-container" data-aos="fade-up">
     <table>
       <thead>
         <tr>
@@ -255,70 +420,70 @@ Maa Bijasani Petro Chem Pvt. Ltd. Is a trusted name in the chemical manufacturin
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr data-aos="fade-right">
           <td>P.E. 40 (PETROLEUM ETHER)</td>
           <td>COLOUR <br> DISTILLATION RANGE (°C) <br> INITIAL BOILING POINT (IBP) <br> DRY END POINT (DEP) <br> DENSITY</td>
           <td>IS:1448(P:12) <br> IS:1448(P:18) <br><br><br> IS:1448(P:16)</td>
           <td>CLEAR LIQUID <br> ±3°C<br> 40.0°C <br> 60.0°C <br> 0.640 @ 20°C</td>
         </tr>
 
-        <tr>
+        <tr data-aos="fade-left">
           <td>P.E. 60 (PETROLEUM ETHER)</td>
           <td>COLOUR <br> DISTILLATION RANGE (°C) <br> INITIAL BOILING POINT (IBP) <br> DRY END POINT (DEP) <br> DENSITY</td>
           <td>IS:1448(P:12) <br> IS:1448(P:18) <br><br><br> IS:1448(P:16)</td>
           <td>CLEAR LIQUID <br> &plusmn;3°C <br> 60.0°C <br> 80.0°C <br> 0.640 @ 20°C</td>
         </tr>
 
-        <tr>
+        <tr data-aos="fade-right">
           <td>P.E. (SP) 60 (PETROLEUM ETHER)</td>
           <td>COLOUR <br> DISTILLATION RANGE (°C) <br> INITIAL BOILING POINT (IBP) <br> DRY END POINT (DEP) <br> DENSITY</td>
         <td>IS:1448(P:12) <br> IS:1448(P:18) <br><br><br> IS:1448(P:16)</td>
           <td>CLEAR LIQUID <br> &plusmn;3°C <br> 64.0°C <br> 68.0°C <br> 0.665 @ 20°C</td>
         </tr>
 
-        <tr>
+        <tr data-aos="fade-left">
           <td>P.E. 80 (PETROLEUM ETHER)</td>
           <td>COLOUR <br> DISTILLATION RANGE (°C) <br> INITIAL BOILING POINT (IBP) <br> DRY END POINT (DEP) <br> DENSITY</td>
           <td>IS:1448(P:12) <br> IS:1448(P:18) <br><br><br> IS:1448(P:16)</td>
           <td>CLEAR LIQUID <br> &plusmn;3°C <br> 80.0°C <br> 100.0°C <br> 0.730 @ 20°C</td>
         </tr>
 
- <tr>
+ <tr data-aos="fade-right">
           <td>P.E. 90 (PETROLEUM ETHER)</td>
           <td>COLOUR <br> DISTILLATION RANGE (°C) <br> INITIAL BOILING POINT (IBP) <br> DRY END POINT (DEP) <br> DENSITY</td>
          <td>IS:1448(P:12) <br> IS:1448(P:18) <br><br><br> IS:1448(P:16)</td>
           <td>CLEAR LIQUID <br> &plusmn;3°C <br> 90.0°C <br> 100.0°C <br> 0.730 @ 20°C</td>
         </tr>
 
-         <tr>
+         <tr data-aos="fade-left">
           <td>P.E. 100 (PETROLEUM ETHER)</td>
           <td>COLOUR <br> DISTILLATION RANGE (°C) <br> INITIAL BOILING POINT (IBP) <br> DRY END POINT (DEP) <br> DENSITY</td>
           <td>IS:1448(P:12) <br> IS:1448(P:18) <br><br><br> IS:1448(P:16)</td>
           <td>CLEAR LIQUID <br> &plusmn;3°C <br> 100.0°C <br> 120.0°C <br> 0.740 @ 20°C</td>
         </tr>
 
-         <tr>
+         <tr data-aos="fade-right">
           <td>P.E. 120 (PETROLEUM ETHER)</td>
           <td>COLOUR <br> DISTILLATION RANGE (°C) <br> INITIAL BOILING POINT (IBP) <br> DRY END POINT (DEP) <br> DENSITY</td>
          <td>IS:1448(P:12) <br> IS:1448(P:18) <br><br><br> IS:1448(P:16)</td>
           <td>CLEAR LIQUID <br> &plusmn;3°C <br> 120.0°C <br> 140.0°C <br> 0.740 @ 20°C</td>
         </tr>
 
-         <tr>
+         <tr data-aos="fade-left">
           <td>INDUSTRIAL SOLVENT (A)</td>
           <td>COLOUR <br> DISTILLATION RANGE (°C) <br> INITIAL BOILING POINT (IBP) <br> DRY END POINT (DEP) <br> DENSITY</td>
           <td>IS:1448(P:12) <br> IS:1448(P:18) <br><br><br> IS:1448(P:16)</td>
           <td>CLEAR LIQUID <br> &plusmn;3°C <br> 55.0°C <br> 115.0°C <br> 0.690 @ 20°C</td>
         </tr>
 
-         <tr>
+         <tr data-aos="fade-right">
           <td>MTO MB 150</td>
           <td>COLOUR <br> DISTILLATION RANGE (°C) <br> INITIAL BOILING POINT (IBP) <br> DRY END POINT (DEP) <br> DENSITY</td>
          <td>IS:1448(P:12) <br> IS:1448(P:18) <br><br><br> IS:1448(P:16)</td>
           <td>CLEAR LIQUID <br> &plusmn;3°C <br> 55.0°C <br> 115.0°C <br> 0.690 @ 20°C</td>
         </tr>
 
-        <tr>
+        <tr data-aos="fade-left">
           <td>MTO MB 200</td>
           <td>COLOUR <br> DISTILLATION RANGE (°C) <br> INITIAL BOILING POINT (IBP) <br> DRY END POINT (DEP) <br> DENSITY</td>
           <td>IS:1448(P:12) <br> IS:1448(P:18) <br><br><br> IS:1448(P:16)</td>
@@ -330,52 +495,52 @@ Maa Bijasani Petro Chem Pvt. Ltd. Is a trusted name in the chemical manufacturin
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-16">
+<section id="contact" class="py-16 bg-gray-50">
   <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
     
     <!-- Contact Info Grid -->
-    <div>
+    <div data-aos="fade-right">
       <h3 class="text-2xl font-bold">Get in touch</h3>
       <p class="mt-2 text-gray-600">For sales, technical enquiries or bulk orders, contact our team.</p>
 
       <!-- Grid of offices -->
       <div class="mt-8 grid md:grid-cols-2 gap-6">
-        
+
         <!-- Company Location -->
-        <div class="border rounded-lg p-5 shadow-sm hover:shadow-md transition">
-          <h4 class="font-semibold text-lg mb-2">Company Location</h4>
+        <div class="contact-card p-5 rounded-lg shadow-sm"data-aos="fade-up" data-aos-delay="300">
+          <h4 class="font-semibold text-lg mb-2"><i class="fas fa-map-marker-alt"></i> Company Location</h4>
           <p class="text-gray-700 text-sm">Gut No 78/2, at Kalmadi, Village Pimparkheda,<br> Tal : Shindkheda, Dist : Dhule , (India) 424 309</p>
-          <p class="mt-2 text-sm"><strong>Phone:</strong> 
+          <p class="mt-2 text-sm"><strong><i class="fas fa-phone-alt"></i> Phone:</strong> 
             <a href="tel:+919011085271" class="text-sky-600">+91-9011085271</a>
           </p>
-          <p class="text-sm"><strong>Email:</strong> 
+          <p class="text-sm"><strong><i class="fas fa-envelope"></i> Email:</strong> 
             <a href="mailto:mbpcpl5@gmail.com" class="text-sky-600">mbpcpl5@gmail.com</a> / 
             <a href="mailto:mbpcpl@hotmail.com" class="text-sky-600">mbpcpl@hotmail.com</a>
           </p>
         </div>
 
         <!-- Shirpur Office -->
-        <div class="border rounded-lg p-5 shadow-sm hover:shadow-md transition">
-          <h4 class="font-semibold text-lg mb-2">Shirpur Office</h4>
+        <div class="contact-card p-5 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="300">
+          <h4 class="font-semibold text-lg mb-2"><i class="fas fa-building"></i> Shirpur Office</h4>
           <p class="text-gray-700 text-sm">2964/A, Aadarsh Dairy Compound, Main Road,<br> Tal : Shirpur, Dist : Dhule (India) 425 405</p>
-          <p class="mt-2 text-sm"><strong>Phone:</strong> 
+          <p class="mt-2 text-sm"><strong><i class="fas fa-phone-alt"></i> Phone:</strong> 
             <a href="tel:+919405158022" class="text-sky-600">+91-9405158022</a> / 
             <a href="tel:+919011085276" class="text-sky-600">+91-9011085276</a>
           </p>
-          <p class="text-sm"><strong>Email:</strong> 
+          <p class="text-sm"><strong><i class="fas fa-envelope"></i> Email:</strong> 
             <a href="mailto:mbpcpl5@gmail.com" class="text-sky-600">mbpcpl5@gmail.com</a> / 
             <a href="mailto:mbpcpl@hotmail.com" class="text-sky-600">mbpcpl@hotmail.com</a>
           </p>
         </div>
 
         <!-- Mumbai Office -->
-        <div class="border rounded-lg p-5 shadow-sm hover:shadow-md transition md:col-span-2">
-          <h4 class="font-semibold text-lg mb-2">Mumbai Office</h4>
+        <div class="contact-card p-5 rounded-lg shadow-sm md:col-span-2" data-aos="fade-up" data-aos-delay="300">
+          <h4 class="font-semibold text-lg mb-2"><i class="fas fa-city"></i> Mumbai Office</h4>
           <p class="text-gray-700 text-sm">Shop no 7, Dev Shrusti Tower, Opp. Indira Complex,<br> 60 ft Road, Bhayander (W) Mumbai (India) 401 101</p>
-          <p class="mt-2 text-sm"><strong>Phone:</strong> 
+          <p class="mt-2 text-sm"><strong><i class="fas fa-phone-alt"></i> Phone:</strong> 
             <a href="tel:+919322197468" class="text-sky-600">+91-9322197468</a>
           </p>
-          <p class="text-sm"><strong>Email:</strong> 
+          <p class="text-sm"><strong><i class="fas fa-envelope"></i> Email:</strong> 
             <a href="mailto:mbpcpl5@gmail.com" class="text-sky-600">mbpcpl5@gmail.com</a> / 
             <a href="mailto:mbpcpl@hotmail.com" class="text-sky-600">mbpcpl@hotmail.com</a>
           </p>
@@ -384,36 +549,33 @@ Maa Bijasani Petro Chem Pvt. Ltd. Is a trusted name in the chemical manufacturin
       </div>
     </div>
 
-   <!-- Contact Form -->
-    <form class="bg-white p-6 rounded-lg shadow-sm flex flex-col h-full">
+    <!-- Contact Form -->
+    <form class="bg-white p-6 rounded-lg shadow-sm flex flex-col h-full" data-aos="fade-left">
       <h4 class="text-xl font-semibold mb-4">Send us a message</h4>
       <div class="flex-1 space-y-4">
         <label class="block text-sm">
           Name
-          <input class="mt-1 block w-full border rounded px-3 py-2" placeholder="Your name">
+          <input class="mt-1 block w-full" placeholder="Your name">
         </label>
         <label class="block text-sm">
           Email
-          <input type="email" class="mt-1 block w-full border rounded px-3 py-2" placeholder="you@example.com">
+          <input type="email" class="mt-1 block w-full" placeholder="you@example.com">
         </label>
         <label class="block text-sm">
-          Message
-          <textarea rows="6" class="mt-1 block w-full border rounded px-3 py-2" placeholder="Tell us about your requirement"></textarea>
-        </label>
+  Message
+  <textarea rows="4" class="mt-1 block w-full" placeholder="Tell us about your requirement"></textarea>
+</label>
       </div>
       <div class="flex justify-end mt-4">
-        <button type="submit" class="bg-black text-white px-5 py-2 rounded-md shadow hover:bg-sky-700 transition">
-          Send Message
-        </button>
+        <button type="submit">Send Message</button>
       </div>
     </form>
   </div>
 </section>
 
 
-
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-200 py-8">
+<footer class="bg-gray-900 text-gray-200 py-8" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6">
       <div>
         <h4 class="font-bold">MB Petrochem</h4>
@@ -422,7 +584,9 @@ Maa Bijasani Petro Chem Pvt. Ltd. Is a trusted name in the chemical manufacturin
       <div>
         <h5 class="font-semibold">Quick links</h5>
         <ul class="mt-3 space-y-2 text-sm">
-          <li><a href="#products">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="#products">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -447,8 +611,33 @@ Maa Bijasani Petro Chem Pvt. Ltd. Is a trusted name in the chemical manufacturin
 
   menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
+    
   });
+  
+  
 </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  
+    once: true      
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let links = document.querySelectorAll("nav a");
+    let currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
 </body>
 </html>
