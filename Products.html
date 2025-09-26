@@ -614,6 +614,34 @@ window.addEventListener("DOMContentLoaded", function () {
     once: true     
   });
 </script>
+<script>
+  function adjustProductDetails() {
+    const details = document.querySelector(".product-details");
+    if (!details) return;
+
+    if (window.innerWidth <= 534) {
+      details.style.width = "100%";
+      details.style.margin = "0 auto";
+      details.style.overflowX = "auto";   // horizontal scroll
+      details.style.overflowY = "hidden"; // vertical na ho
+      details.style.whiteSpace = "nowrap";
+      details.style.background = "#fff";  // background white
+      details.style.borderRadius = "8px"; // thoda style optional
+      // details.style.padding = "10px";
+    } else {
+      details.style.width = "100%";
+      details.style.margin = "0";
+      details.style.overflow = "auto";
+      details.style.whiteSpace = "normal";
+      details.style.background = "transparent"; // desktop ke liye wapas transparent
+    }
+  }
+
+  window.addEventListener("load", adjustProductDetails);
+  window.addEventListener("resize", adjustProductDetails);
+</script>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
