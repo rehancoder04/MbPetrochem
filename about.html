@@ -336,7 +336,7 @@ tbody tr td:first-child {
     <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
       <a href="about.html" class="hover:text-sky-600">About</a>
       <a href="Products.html" class="hover:text-sky-600">Products</a>
-      <a href="#services" class="hover:text-sky-600">Services</a>
+      <!-- <a href="#services" class="hover:text-sky-600">Services</a> -->
       <a href="#contact" class="bg-black text-white px-4 py-2 rounded-md shadow hover:bg-sky-700 transition">Contact</a>
     </nav>
 
@@ -351,7 +351,7 @@ tbody tr td:first-child {
   <nav class="flex flex-col items-end px-6 py-4 space-y-3 text-sm font-medium text-right">
     <a href="About.html" class="hover:text-sky-600">About</a>
     <a href="Products.html" class="hover:text-sky-600">Products</a>
-    <a href="#services" class="hover:text-sky-600">Services</a>
+    <!-- <a href="#services" class="hover:text-sky-600">Services</a> -->
     <a href="#contact" class="bg-black text-white px-4 py-2 rounded-md shadow hover:bg-sky-700 transition">
       Contact
     </a>
@@ -607,31 +607,49 @@ We believe in Delivering Quality products to our valued customers and we never c
 
 
   <!-- FOOTER -->
-<footer class="bg-gray-900 text-gray-200 py-8" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6">
-      <div>
-        <h4 class="font-bold">MB Petrochem</h4>
-        <p class="mt-2 text-sm">Leading manufacturer of specialty chemicals and solvents.</p>
-      </div>
-      <div>
-        <h5 class="font-semibold">Quick links</h5>
-        <ul class="mt-3 space-y-2 text-sm">
+ <footer class="bg-gray-900 text-gray-200 py-8" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+    
+    <!-- Left: Company -->
+    <div>
+      <h4 class="font-bold">MB Petrochem</h4>
+      <p class="mt-2 text-sm">Leading manufacturer of specialty chemicals and solvents.</p>
+      
+     <img src="images/qrcode.jpg" alt="QR Code" class="mt-4 w-64 h-40 hidden md:inline" />
+    </div>
+
+    <!-- Middle: Links + Mobile QR -->
+    <div>
+      <h5 class="font-semibold">Quick links</h5>
+      <div class="mt-3 flex items-start justify-between">
+        <!-- Links -->
+        <ul class="space-y-2 text-sm">
           <li><a href="about.html">About</a></li>
           <li><a href="Products.html">Products</a></li>
-          <li><a href="#products">Services</a></li>
+          <!-- <li><a href="#products">Services</a></li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-      <div>
-        <h5 class="font-semibold">Subscribe</h5>
-        <form class="mt-3 flex gap-2">
-          <input placeholder="your email" class="px-3 py-2 rounded bg-gray-800 text-sm w-full" />
-          <button class="px-3 py-2 bg-black rounded">Join</button>
-        </form>
+
+        <!-- Tablet & Mobile QR -->
+        <img src="images/qrcode.jpg" alt="QR Code" class="ml-4 -mt-5 w-32 h-32 inline md:hidden" />
       </div>
     </div>
-    <div class="mt-8 text-center text-xs text-gray-400">© <span id="year"></span> MB Petrochem. All rights reserved.</div>
-  </footer>
+
+    <!-- Right: Subscribe -->
+    <div>
+      <h5 class="font-semibold">Subscribe</h5>
+      <form class="mt-3 flex gap-2">
+        <input placeholder="your email" class="px-3 py-2 rounded bg-gray-800 text-sm w-full" />
+        <button class="px-3 py-2 bg-black rounded">Join</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="mt-8 text-center text-xs text-gray-400">
+    © <span id="year"></span> MB Petrochem. All rights reserved.
+  </div>
+</footer>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
