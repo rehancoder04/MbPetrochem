@@ -687,6 +687,19 @@ We believe in Delivering Quality products to our valued customers and we never c
     });
   });
 </script>
+<script>
+window.addEventListener("load", function() {
+  if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+      // AOS animation aur layout load hone ke baad smooth scroll kare
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 800);
+    }
+  }
+});
+</script>
 
 
 </body>
