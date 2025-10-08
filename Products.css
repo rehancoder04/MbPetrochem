@@ -326,8 +326,8 @@ nav .contact-btn:hover {
         gap: 15px;
     }
     .product-card img {
-       height: 150px;        /* auto height */
-      object-fit: contain; /* पूरी image दिखे */
+       height: 150px;       
+      object-fit: contain; 
       max-height: none;
     }
 }
@@ -341,8 +341,24 @@ nav .contact-btn:hover {
    }
 @media (max-width: 1190px) {
   .product-card h3 {
-      font-size: 14px;   /* थोड़ा छोटा कर देंगे */
-      line-height: 1.3;  /* compact look */
+      font-size: 14px;   
+      line-height: 1.3; 
+  }
+}
+ @media (max-width: 860px) {
+  .logo-img {
+    height: 50px;
+  }
+  .logo-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .logo-img {
+    height: 50px;
+  }
+  .logo-text {
+    font-size: 14px;
   }
 }
    @media (max-width: 767px) {
@@ -362,12 +378,11 @@ nav .contact-btn:hover {
 @media (max-width: 600px) {
     .flex {
         flex-direction: column;
-        gap: 20px; /* sections में spacing */
+        gap: 20px; 
         
     }
      .text {
-    font-size: 20px !important; /* और छोटा font ताकि fit हो जाए */
-    /* margin-top: 15px; */
+    font-size: 20px !important;
   }
 
     .product-list, 
@@ -377,7 +392,7 @@ nav .contact-btn:hover {
     }
 
     .product-list {
-        display: block; /* एक-एक करके नीचे card */
+        display: block; 
     }
 
     .product-card {
@@ -386,9 +401,9 @@ nav .contact-btn:hover {
     }
 
     .product-card img {
-        width: 100%;       /* पूरी चौड़ाई */
+        width: 100%;       
         height: 150px;
-        max-height: unset; /* कटना बंद */
+        max-height: unset; 
         object-fit: contain;
     }
 
@@ -413,4 +428,20 @@ nav .contact-btn:hover {
     .product-details {
         margin-top: 10px; /* नीचे gap */
     }
+     .logo-img {
+    height: 50px;
+  }
+  .logo-text {
+    font-size: 16px;
+    margin-left: 2px;
+  }
+}
+ @media (max-width: 399px) {
+  .logo-img {
+    height: 40px;
+  }
+  .logo-text {
+    font-size: 12px;
+    margin-left: 0px;
+  }
 }

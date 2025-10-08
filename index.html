@@ -208,6 +208,38 @@ nav a.active::after {
       margin-top: 0px
     }
    }
+   @media (max-width: 860px) {
+  .logo-img {
+    height: 50px;
+  }
+  .logo-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .logo-img {
+    height: 50px;
+  }
+  .logo-text {
+    font-size: 14px;
+  }
+}
+   /* Tablet  */
+  @media (max-width: 768px) {
+    .product-img {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+  .logo-img {
+    height: 50px;
+  }
+  .logo-text {
+    font-size: 16px;
+    margin-left: 2px;
+  }
+}
 
   /* Mobile */
   @media (max-width: 467px) {
@@ -215,6 +247,15 @@ nav a.active::after {
       height: 220px;
     }
   }
+  @media (max-width: 399px) {
+  .logo-img {
+    height: 40px;
+  }
+  .logo-text {
+    font-size: 12px;
+    margin-left: 0px;
+  }
+}
  
   </style>
 </head>
@@ -223,9 +264,10 @@ nav a.active::after {
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <!-- Logo -->
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="./images/MBP1.jpg" alt="MB Petrochem Logo" class="h-20 w-auto object-contain" />
-    </a>
+   <a href="index.html" class="logo-link">
+  <img src="./images/monu.jpg" alt="MB Petrochem Logo" class="logo-img" />
+  <span class="logo-text">Maa Bijasani Petro Chem Pvt. Ltd.</span>
+</a>
 
     <!-- Desktop Nav -->
     <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
