@@ -191,7 +191,30 @@ footer a:hover {
 nav a.active::after {
   width: 100%;
 }
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+  }
 
+  .logo-img {
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .logo-text {
+    margin-left: 2px;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #d71920;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  .logo-link:hover .logo-text {
+    color: #b11216;
+    transition: color 0.3s ease;
+  }
 
 
    /* Tablet  */
