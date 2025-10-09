@@ -325,6 +325,58 @@ tbody tr td:first-child {
     color: #b11216;
     transition: color 0.3s ease;
   }
+
+
+.view-btn {
+  display: block;            /* Center align with margin auto */
+  margin: 8px auto 0;        /* Spacing top + center */
+  background: transparent;    /* No background */
+  color: #000;            /* Primary color text */
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #007bff;       /* Fill color on hover */
+  color: #fff;               /* Text color change */
+  transform: scale(1.05);    /* Slight zoom effect */
+}
+.extra-info {
+  display: none;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+.inner-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.inner-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Smooth slide animation */
+.extra-info.show {
+  display: table-row;
+  animation: slideDown 0.3s ease forwards;
+}
+
+
+
+
+
+
+
+
+
 /* =============== Responsive Design =============== */
 @media (max-width: 992px) {
  
