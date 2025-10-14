@@ -328,8 +328,8 @@ tbody tr td:first-child {
 
 
 .view-btn {
-  display: block;            /* Center align with margin auto */
-  margin: 8px auto 0;        /* Spacing top + center */
+  display: block;            
+  margin: 8px auto 0;       
   background: transparent;    /* No background */
   color: #000;            /* Primary color text */
   padding: 6px 12px;
@@ -369,8 +369,24 @@ tbody tr td:first-child {
   animation: slideDown 0.3s ease forwards;
 }
 
+.pdf-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #111827;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
 
-
+.pdf-btn:hover {
+  background: #f3f4f6; /* light hover shade */
+  border-color: #4b5563;
+  color: #111827;
+   transform: scale(1.05);
+}
 
 
 
