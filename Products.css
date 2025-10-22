@@ -157,14 +157,14 @@ nav .contact-btn:hover {
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;       /* Center alignment */
+  justify-content: center;      
   gap: 15px;
-  margin: 30px auto 20px auto;  /* Top 30px, bottom 20px, center horizontally */
-  width: 70%;                    /* Container width 70% */
+  margin: 30px auto 20px auto;  
+  width: 70%;                   
 }
 
 .product-box {
-  flex: 0 0 23%;                 /* 4 boxes per row (100/4 ≈ 25%) minus gap */
+  flex: 0 0 23%;                
   border: 1px solid #333;
   padding: 12px 4px;
   border-radius: 6px;
@@ -172,7 +172,7 @@ nav .contact-btn:hover {
   color: black;
   text-align: center;
   font-size: 15px;
-  box-sizing: border-box;        /* Ensure padding + border included in width */
+  box-sizing: border-box;       
 }
 
 span
@@ -330,8 +330,8 @@ tbody tr td:first-child {
 .view-btn {
   display: block;            
   margin: 8px auto 0;       
-  background: transparent;    /* No background */
-  color: #000;            /* Primary color text */
+  background: transparent;   
+  color: #000;           
   padding: 6px 12px;
   cursor: pointer;
   font-size: 15px;
@@ -340,9 +340,9 @@ tbody tr td:first-child {
 }
 
 .view-btn:hover {
-  background: #007bff;       /* Fill color on hover */
-  color: #fff;               /* Text color change */
-  transform: scale(1.05);    /* Slight zoom effect */
+  background: #007bff;      
+  color: #fff;              
+  transform: scale(1.05);   
 }
 .extra-info {
   display: none;
@@ -382,7 +382,7 @@ tbody tr td:first-child {
 }
 
 .pdf-btn:hover {
-  background: #f3f4f6; /* light hover shade */
+  background: #f3f4f6; 
   border-color: #4b5563;
   color: #111827;
    transform: scale(1.05);
