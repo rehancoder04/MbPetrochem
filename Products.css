@@ -160,7 +160,7 @@ nav .contact-btn:hover {
   justify-content: center;      
   gap: 15px;
   margin: 30px auto 20px auto;  
-  width: 70%;                   
+  width: 70%;                   akshfkshfkahkjdfjkdkj
 }
 
 .product-box {
@@ -370,7 +370,7 @@ tbody tr td:first-child {
 }
 
 .pdf-btn {
-  display: block;
+  display: inline-block;
   padding: 6px 12px;
   border-radius: 6px;
   color: #111827;
